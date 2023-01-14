@@ -67,7 +67,7 @@ RUN meson setup --prefix=/usr/local/gstreamer \
     && ninja -C build install \
     && ldconfig
 
-FROM scratch
+FROM scratch AS pulsegst
 COPY --from=pulseaudio /usr/local/pulseaudio/ /usr/local/pulseaudio/
 COPY --from=gstreamer /usr/local/gstreamer/ /usr/local/gstreamer/
 
