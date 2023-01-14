@@ -6,9 +6,6 @@ IMAGE_REPO ?= ghcr.io/nanosonde/pulsegst
 CURRENT_UID := $(shell id -u)
 CURRENT_GID := $(shell id -g)
 
-version:
-	echo 'VERSION = "$(VERSION)-$(COMMIT_HASH)"' > pulsegst/version.py
-
 local:
 	docker buildx build --tag pulsegst:latest .
 
