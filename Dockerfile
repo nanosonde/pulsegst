@@ -38,7 +38,7 @@ RUN meson setup --prefix=/usr/local/pulseaudio \
 # Download and build gstreamer
 FROM base AS gstreamer
 ARG DEBIAN_FRONTEND
-ARG GSTREAMER_VERSION=1.21.3
+ARG GSTREAMER_VERSION=1.22.0
 
 COPY --from=pulseaudio /usr/local/pulseaudio/ /usr/local/
 
