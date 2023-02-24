@@ -7,7 +7,7 @@ Versions:
 
 The packages can be found here: https://github.com/nanosonde/pulsegst/pkgs/container/pulsegst
 
-**Note**: the resulting docker images for various CPU architectures only contain the compiled files (binaries/libs, etc.) of gstreamer and pulseaudio for use with another multistage dockerfile.
+**Note**: the resulting docker images for various CPU architectures only contain the compiled files (binaries/libs, etc.) of gstreamer and pulseaudio for use with another multistage dockerfile. Nothing else.
 ```
 [...]
 COPY --from=pulsegstimage /usr/local/pulseaudio/ /usr/local/pulseaudio/
