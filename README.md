@@ -1,3 +1,6 @@
+# This is not required anymore by sip2rtsp!
+# sip2rtsp is now based on Debian Bookworm which already includes the latest stable version of gstreamer and pulseaudio!
+
 # pulsegst
 Custom build of pulseaudio and gstreamer for use with sip2rtsp.
 
